@@ -10,3 +10,5 @@ This file serves us my main respository (for now) of free code camp projects
 trump photo app is my version of the cat photo app
 
 Added an extra line to test github Desktop
+
+Third batch of changes -- now there was no branch pre-created. 
