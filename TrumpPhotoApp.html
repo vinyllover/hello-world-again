@@ -1,0 +1,76 @@
+<!--I can specify styles on top if I want
+-->
+<!-- import special fonts from google
+-->
+<link href="https://fonts.googleapis.com/css?family=Lobster|Macondo" rel="stylesheet">
+<style>
+h2 {color:red!im;
+	font-family:Macondo,Helvetica;}
+	p {color:blue;
+		font-size:16px;
+		font-family:monospace;
+	}
+	.funky {color:gray;
+		font-style:italic;
+		font:arial;
+	}
+	.small-image{width:100px;
+		border-radius:10px;}
+		.large-image{width:500px;
+			border-radius:10px;}
+			.border-style{
+				border-color:red;
+				border-width:15px;
+				border-style:solid;
+				padding: 20px
+			}
+				.silver-background{
+					background-color: gray;
+					padding: 20px
+
+				}
+				.white-background{
+					background-color: white;
+					padding: 20px 10px 20px 10px;
+					margin: 20px -20px 20px -20px;
+				}
+
+				</style>
+				<h2   class='funky'>The Prez-i-dent </h2>
+
+				<img style=border-radius:50% class='large-image border-style'
+				src="https://urbangirlmag.files.wordpress.com/2017/01/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg"
+				alt='Ugly Donald Trump'>
+
+				<p> <a href="#">More Trump </a></p>
+
+				<!--I can override style elements in line -->
+				<ol class="border-style" style="border-color:blue">
+					<p>Trump Quotes</p>
+					<li> You have to think anyway, so why not think big?</li>
+
+					<li> In the end, you're measured not by how much you undertake but by what you finally accomplish.
+					</li>
+					<li> Everything in life is luck.</li>
+					<li> Anyone who thinks my story is anywhere near over is sadly mistaken.
+					</li>
+				</ol>
+				<!--  div allows me to assign styles and settings to blocks of code especially when
+				they are of different types-->
+				<!-- note that class declarations in the style portion determine their priority in use.  Listing silver-background before
+			  	white-background or vice-versa in class= has no impact on precedence.  It is their order in <style></style> that matters-->
+				<div class="silver-background" border-width="10px" >
+					<p>Do you have anything to say about Mr. Trump?</p>
+					<form action="submit-to-database">
+						<button type='submit'>Submit</button>
+						<input required border-width=5x type='text'>
+						<p>Party Affiliation</p>
+						<label><input type='radio' name='party' checked="">Democrat </label>
+						<label><input type="radio" name='party' > Republican</label>
+						<p class="white-background silver-background" >Media Sources</p>
+						<label><input type='checkbox' name='media' checked="">Internet </label>
+						<label><input type="checkbox" name='media'> Print</label>
+						<label><input type="checkbox" name='media'> Social</label>
+
+					</form>
+				</div>
